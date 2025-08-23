@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "tconstruct:config",
+          "prop": "force_integration_materials"
+        },
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:pellets/antimatter"
+        }
+      ]
+    }
+  ],
+  "cooling_time": 251,
+  "fluid": {
+    "amount": 250,
+    "fluid": "tinkers_advanced:molten_antimatter"
+  },
+  "result": {
+    "tag": "forge:pellets/antimatter"
+  }
+}

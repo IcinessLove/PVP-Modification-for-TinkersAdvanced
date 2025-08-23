@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "tinkers_advanced:fragile"
+    },
+    {
+      "level": 1,
+      "name": "etstlib:anisotropy"
+    }
+  ],
+  "perStat": {
+    "tinkers_advanced:flux_core": [
+      {
+        "level": 3,
+        "name": "tinkers_advanced:piezoelectric_effect"
+      }
+    ]
+  }
+}

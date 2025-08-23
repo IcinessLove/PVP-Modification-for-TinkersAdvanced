@@ -1,0 +1,28 @@
+{
+  "values": [
+    "tinkers_advanced:molten_iridium",
+    "tinkers_advanced:molten_blaze_netherite",
+    "tinkers_advanced:molten_antimony",
+    "tinkers_advanced:molten_bismuth",
+    {
+      "id": "tinkers_advanced:molten_irradium",
+      "required": false
+    },
+    {
+      "id": "tinkers_advanced:molten_basalz_signalum",
+      "required": false
+    },
+    {
+      "id": "tinkers_advanced:molten_blizz_enderium",
+      "required": false
+    },
+    {
+      "id": "tinkers_advanced:molten_void_steel",
+      "required": false
+    },
+    {
+      "id": "tinkers_advanced:molten_biltz_lumium",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "tconstruct:material_melting",
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "tconstruct:config",
+          "prop": "force_integration_materials"
+        },
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:pellets/antimatter"
+        }
+      ]
+    }
+  ],
+  "input": "tinkers_advanced:antimatter",
+  "result": {
+    "amount": 250,
+    "tag": "forge:molten_antimatter"
+  },
+  "temperature": 4996
+}

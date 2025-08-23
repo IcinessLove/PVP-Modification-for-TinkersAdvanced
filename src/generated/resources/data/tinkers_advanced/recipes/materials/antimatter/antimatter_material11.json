@@ -1,0 +1,24 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "tconstruct:config",
+          "prop": "force_integration_materials"
+        },
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:pellets/antimatter"
+        }
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:pellets/antimatter"
+  },
+  "material": "tinkers_advanced:antimatter",
+  "needed": 1,
+  "value": 1
+}

@@ -1,0 +1,13 @@
+{
+  "tool": "tinkers_advanced:ionized_cannon",
+  "text": [
+    { "text": "Ionized Cannon is a melee weapon that fires plasma beam consuming fluids.When fluid has entity effects ,It will gain 300% damage boost." },
+    { "text": "Fluid effect level is determined by damage.Can be enhanced by Expanding modifier.Attack range affects range of beam.", "paragraph": false }
+  ],
+  "properties": [
+    "+3 Attack Damage",
+    "1.0 Attack Speed",
+    "Charge Duration = 2 Seconds ÷ Attack Speed",
+    "Core part made by casting molten material on Echo Shard"
+  ]
+}

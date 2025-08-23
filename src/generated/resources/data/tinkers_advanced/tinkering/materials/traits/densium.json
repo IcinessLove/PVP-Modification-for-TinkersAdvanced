@@ -1,0 +1,54 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "etstlib:extra_dense"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "etstlib:extra_dense"
+      },
+      {
+        "level": 1,
+        "name": "etstlib:hyper_density"
+      }
+    ],
+    "tconstruct:binding": [
+      {
+        "level": 1,
+        "name": "etstlib:extra_dense"
+      },
+      {
+        "level": 1,
+        "name": "etstlib:momentum_accelerate"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "etstlib:extra_dense"
+      },
+      {
+        "level": 5,
+        "name": "etstlib:momentum_accelerate"
+      },
+      {
+        "level": 1,
+        "name": "tconstruct:heavy"
+      }
+    ],
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "etstlib:extra_dense"
+      },
+      {
+        "level": 1,
+        "name": "etstlib:rude"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "tconstruct:config",
+          "prop": "force_integration_materials"
+        },
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:storage_blocks/refined_obsidian"
+        }
+      ]
+    },
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "tconstruct:config",
+          "prop": "force_integration_materials"
+        },
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:ingots/refined_obsidian"
+        }
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/refined_obsidian"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/refined_obsidian"
+  },
+  "material": "tinkers_advanced:refined_obsidian",
+  "needed": 1,
+  "value": 9
+}
