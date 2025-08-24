@@ -5,8 +5,8 @@ A balance-modified version of 'TinkersAdvanced' for Minecraft.
 This is a modified version of 'Tinker's advanced' (original by 'EtSH-C2H6S'), based on release `3.0.0-beta.9`. The changes were made by Diacletia with the goal of achieving a more balanced experience in PVP.
 
 ### Changes Made:
-- Removed the armor-piercing effect of the fluid cannon.
-- Weakened the Western-style sword form of the ionizedTuner:
+- Removed the armor-piercing(sculkResonance) effect of the fluid cannon.
+- Weakened the Rapier form of the ionizedTuner:
   - Changed to Piercing II.
   - Removed the attack range bonus.
 - Weakened the broadsword form of the ionizedTuner:
