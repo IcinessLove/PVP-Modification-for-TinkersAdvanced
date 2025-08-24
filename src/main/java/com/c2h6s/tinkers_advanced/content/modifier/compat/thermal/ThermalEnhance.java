@@ -64,7 +64,7 @@ public class ThermalEnhance extends EtSTBaseModifier implements OnAttackedModifi
     @Override
     public float beforeMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damage, float baseKnockback, float knockback) {
         if (context.getTarget() instanceof LivingEntity living&&context.isFullyCharged()) {
-            living.forceAddEffect(new MobEffectInstance(TiAcEffects.TETANUS.get(), 80 + 40 * modifier.getLevel(), 1), context.getAttacker());
+            living.forceAddEffect(new MobEffectInstance(CoreMobEffects.SUNDERED.get(), 80 + 40 * modifier.getLevel(), 0), context.getAttacker());
             living.invulnerableTime = 0;
         }
         return knockback;
@@ -73,7 +73,7 @@ public class ThermalEnhance extends EtSTBaseModifier implements OnAttackedModifi
     @Override
     public boolean onProjectileHitEntity(ModifierNBT modifiers, ModDataNBT persistentData, ModifierEntry modifier, Projectile projectile, EntityHitResult hit, @Nullable LivingEntity attacker, @Nullable LivingEntity target) {
         if (projectile instanceof AbstractArrow arrow &&arrow.isCritArrow()&&target!=null){
-            target.forceAddEffect(new MobEffectInstance(TiAcEffects.TETANUS.get(),80+40*modifier.getLevel(),1),attacker);
+            target.forceAddEffect(new MobEffectInstance(CoreMobEffects.SUNDERED.get(),80+40*modifier.getLevel(),0),attacker);
             target.invulnerableTime=0;
         }
         return false;
