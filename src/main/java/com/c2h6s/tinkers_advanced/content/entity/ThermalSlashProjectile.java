@@ -54,9 +54,9 @@ public class ThermalSlashProjectile extends Projectile {
                     }
                     entity.hurt(LegacyDamageSource.any(this.damageSources().mobProjectile(this,this.getOwner() instanceof LivingEntity living?living:null)).setBypassArmor().setBypassInvulnerableTime(),this.baseDamage);
                     if (entity instanceof LivingEntity living){
-                        living.forceAddEffect(new MobEffectInstance(CoreMobEffects.CHILLED.get(),100+50*modifierLevel,modifierLevel),this.getOwner());
-                        living.forceAddEffect(new MobEffectInstance(CoreMobEffects.SHOCKED.get(),100+50*modifierLevel,modifierLevel),this.getOwner());
-                        living.forceAddEffect(new MobEffectInstance(CoreMobEffects.SUNDERED.get(),100+50*modifierLevel,modifierLevel),this.getOwner());
+                        living.forceAddEffect(new MobEffectInstance(CoreMobEffects.CHILLED.get(),100+50*modifierLevel,0),this.getOwner());
+                        living.forceAddEffect(new MobEffectInstance(CoreMobEffects.SHOCKED.get(),100+50*modifierLevel,0),this.getOwner());
+                        living.forceAddEffect(new MobEffectInstance(CoreMobEffects.SUNDERED.get(),100+50*modifierLevel,0),this.getOwner());
                     }
                     set.add(entity.getId());
                 }

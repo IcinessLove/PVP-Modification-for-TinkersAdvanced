@@ -5,6 +5,7 @@ A balance-modified version of 'TinkersAdvanced' for Minecraft.
 This is a modified version of 'Tinker's advanced' (original by 'EtSH-C2H6S'), based on release `3.0.0-beta.9`. The changes were made by Diacletia with the goal of achieving a more balanced experience in PVP.
 
 ### Changes Made:
+
 - Removed the armor-piercing(sculkResonance) effect of the fluid cannon.
 - Weakened the Rapier form of the ionizedTuner:
   - Changed to Piercing II.
@@ -12,6 +13,7 @@ This is a modified version of 'Tinker's advanced' (original by 'EtSH-C2H6S'), ba
 - Weakened the broadsword form of the ionizedTuner:
   - Now requires three consecutive aerial attacks to generate the sword aura.
 - Weakened the materials from thermal series. They are no longer able to provide buff levels that are the same as the level of the modifiers, which only influence the lasting time of the buffs.
+- [Thermal_Slash] will no longer generate sword aura if the attack is not hit on an entity.
 
 ## License
 

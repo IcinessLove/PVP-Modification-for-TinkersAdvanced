@@ -80,7 +80,7 @@ public class ThermalSlashModifier extends FluxInfused implements BreakSpeedModif
             }
         }
     }
-
+/*
     @Override
     public void onLeftClickBlock(IToolStackView tool, ModifierEntry entry, Player player, Level level, EquipmentSlot equipmentSlot, BlockState state, BlockPos pos) {
         if (getMode(tool)==2&&!level.isClientSide&&ToolEnergyUtil.extractEnergy(tool,500,true)>=500&&player.getAttackStrengthScale(0)>0.8&&!tool.getItem().isCorrectToolForDrops(state)){
@@ -110,7 +110,7 @@ public class ThermalSlashModifier extends FluxInfused implements BreakSpeedModif
             ToolEnergyUtil.extractEnergy(tool,500,false);
         }
     }
-
+*/
     @Override
     public float beforeMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damage, float baseKnockback, float knockback) {
         if (getMode(tool)==2&&!context.getLevel().isClientSide&&ToolEnergyUtil.extractEnergy(tool,500,true)>=500&&context.isFullyCharged()&&context.getAttacker() instanceof ServerPlayer player){
@@ -136,7 +136,7 @@ public class ThermalSlashModifier extends FluxInfused implements BreakSpeedModif
     public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         Player player = context.getPlayerAttacker();
         if (player!=null&&getMode(tool)>=1&&ToolEnergyUtil.extractEnergy(tool,250,true)>=250&&context.isFullyCharged()) {
-            context.getTarget().hurt(LegacyDamageSource.playerAttack(context.getPlayerAttacker()).setBypassMagic().setBypassInvulnerableTime().setBypassArmor(), 4);
+            context.getTarget().hurt(LegacyDamageSource.playerAttack(context.getPlayerAttacker()).setBypassMagic().setBypassInvulnerableTime().setBypassArmor(), Math.min(4,modifier.getLevel()));
             ToolEnergyUtil.extractEnergy(tool,250,false);
         }
     }
