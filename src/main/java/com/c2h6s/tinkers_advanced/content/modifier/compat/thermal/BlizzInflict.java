@@ -17,10 +17,10 @@ import slimeknights.tconstruct.library.tools.nbt.ModifierNBT;
 public class BlizzInflict extends EtSTBaseModifier {
     @Override
     public float onGetMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
-        if (context.getTarget().isOnFire()){
+        /*if (context.getTarget().isOnFire()){
             context.getTarget().setSecondsOnFire(0);
             return damage+baseDamage;
-        }
+        }*/
         return damage;
     }
     @Override
@@ -32,10 +32,10 @@ public class BlizzInflict extends EtSTBaseModifier {
 
     @Override
     public float onGetArrowDamage(ModDataNBT persistentData, ModifierEntry entry, ModifierNBT modifiers, AbstractArrow arrow, @Nullable LivingEntity attacker, @NotNull Entity target, float baseDamage, float damage) {
-        if (target.isOnFire()){
+        /*if (target.isOnFire()){
             target.setSecondsOnFire(0);
             return damage+baseDamage;
-        }
+        }*/
         return damage;
     }
     @Override
